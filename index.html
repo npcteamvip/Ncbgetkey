@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHẬN KEY STREAM</title>
+
+<style>
+*{box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+}
+.box{
+  width:90%;
+  max-width:380px;
+  padding:25px;
+  text-align:center;
+  color:#fff;
+  background:#1b1b1b;
+  border:1px solid #444;
+  border-radius:18px;
+}
+button{
+  width:100%;
+  padding:14px;
+  margin-top:15px;
+  border:0;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:bold;
+}
+.key-box{
+  display:none;
+  margin-top:20px;
+  padding:15px;
+  background:#101010;
+  border-radius:12px;
+}
+.key{
+  display:block;
+  padding:14px;
+  margin:10px 0;
+  background:#000;
+  border-radius:8px;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>🔑 NHẬN KEY STREAM</h2>
+  <p>Bấm nút để nhận key</p>
+
+  <button id="nhanKey" onclick="showKey()">NHẬN KEY</button>
+
+  <div class="key-box" id="keyBox">
+    <h3>KEY CỦA BẠN</h3>
+    <span class="key">BANH_FREE10502</span>
+  </div>
+</div>
+
+<script>
+function showKey(){
+  document.getElementById("keyBox").style.display="block";
+  document.getElementById("nhanKey").style.display="none";
+}
+</script>
+
+</body>
+</html>
